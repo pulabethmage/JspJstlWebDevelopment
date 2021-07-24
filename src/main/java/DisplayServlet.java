@@ -17,7 +17,7 @@ public class DisplayServlet extends HttpServlet{
 		
 		String name = "Pulasthi";
 		
-		req.setAttribute("myname", name);
+		req.setAttribute("myname_lable", name);
 		RequestDispatcher rd = req.getRequestDispatcher("index.jsp");
 		rd.forward(req, resp);
 	}

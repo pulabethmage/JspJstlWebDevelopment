@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  --%>
      
 <!DOCTYPE html>
 <html>
@@ -11,14 +10,18 @@
 </head>
 <body>
 
+<!--  JAVA Code to return the values from the Display Servlet  -->
  <%
  
-		String myname = request.getAttribute("myname").toString();
+		String myname = request.getAttribute("myname_lable").toString();
  		out.println("My Name is : "+ myname);
  
  %>
-
-<!-- <c:out value="Hello World!" /> -->
+ 
+ <br>
+ 
+ ${myname_lable}
+<!--  Expression Language (EL) -->
 
 </body>
 </html>
