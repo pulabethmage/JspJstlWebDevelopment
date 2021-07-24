@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<!--  You need add jstl libry as well as mysql connector java  into webapp->WEB-INF->lib folder -->
+
  <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/jspweb" user="root" password=""/>
  
  <sql:query var="rs" dataSource="${db}">select * from books_tbl</sql:query>
